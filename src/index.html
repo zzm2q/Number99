@@ -2,14 +2,7 @@
 <head>
     <title>Number Game</title>
     <meta charset='utf-8'>
-    <script type="text/javascript">
-        var isIPhone = /iPhone/ig.test(navigator.appVersion);
-        if(!isIPhone) {
-            document.write('<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,width=640,target-densitydpi=device-dpi" />');
-        } else {
-            document.write('<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=0.5, minimum-scale=0.5,width=640,target-densitydpi=device-dpi" />');
-        }
-    </script>
+    <meta name="viewport" content="user-scalable=no, initial-scale=0.6, maximum-scale=0.6, minimum-scale=0.6,width=640,target-densitydpi=device-dpi" />
     <style type="text/css">
         html { width: 100%; height: 100%; position: absolute; }
         body { width: 100%; height: 100%; position: absolute; padding: 0; margin: 0; -webkit-user-select : none; background-color: #EEEEEE; overflow: hidden; }
@@ -52,6 +45,7 @@
             margin: 0 auto;
             position: relative;
             top: 184px;
+            border-radius: 16px;
         }
         #qzone-container .qzone-logo {
             width: 388px;
@@ -124,7 +118,6 @@
 </div>
 <canvas id="main" width="640" height="960"></canvas>
 <!-- script -->
-<!--
 <script src="libs/tweenjs-0.5.1.min.js"></script>
 <script src="libs/hammer.js"></script>
 <script src="libs/ext-custom.js"></script>
@@ -135,7 +128,6 @@
 <script src="NG/Dialogue.js"></script>
 <script src="NG/Game.js"></script>
 <script src="main.js"></script>
--->
 <!-- script end -->
 </body>
 </html>

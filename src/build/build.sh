@@ -13,6 +13,7 @@ cp ../choose.png dist/
 cp ../sprite.tt.json dist/
 cp ../sprite.tt.png dist/
 cp ../NG.o dist/
+cp -R ../scripts dist/
 
 node replace.js
 
