@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.zzm2q.n99" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>N99</name>
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="SplashScreenDelay" value="5000"/>
+    <preference name="SplashScreen" value="splash"/>
+    <content src="index.html" />
+    <access origin="*" />
+
+    <feature name="Media">
+        <param name="ios-package" value="CDVSound" />
+    </feature>
+</widget>

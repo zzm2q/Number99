@@ -1,0 +1,1798 @@
+{
+  "version": 1,
+  "objects": {
+    "gid": "",
+    "name": "NG.o",
+    "alias": "gameobject",
+    "tags": "",
+    "active": true,
+    "visible": true,
+    "touchable": false,
+    "width": 0,
+    "height": 0,
+    "transform": {
+      "x": 0,
+      "y": 0,
+      "regX": 0,
+      "regY": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "skewX": 0,
+      "skewY": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "relative": true
+    },
+    "components": [
+      {
+        "alias": "NG_Game",
+        "config": {
+          "textureSrc": "sprite.tt.json"
+        }
+      }
+    ],
+    "children": [
+      {
+        "gid": "",
+        "name": "Mask",
+        "alias": "gameobject",
+        "tags": "",
+        "active": true,
+        "visible": true,
+        "touchable": false,
+        "width": 0,
+        "height": 0,
+        "transform": {
+          "x": 0,
+          "y": 0,
+          "regX": 0,
+          "regY": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "skewX": 0,
+          "skewY": 0,
+          "rotation": 0,
+          "alpha": 1,
+          "relative": true
+        },
+        "components": [
+          {
+            "alias": "Framework_ColorMask",
+            "config": {
+              "color": "#000000"
+            }
+          }
+        ],
+        "children": []
+      },
+      {
+        "gid": "",
+        "name": "BG",
+        "alias": "gameobject",
+        "tags": "",
+        "active": true,
+        "visible": true,
+        "touchable": false,
+        "width": 0,
+        "height": 0,
+        "transform": {
+          "x": -700,
+          "y": 160,
+          "regX": 0,
+          "regY": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "skewX": 0,
+          "skewY": 0,
+          "rotation": -30,
+          "alpha": 1,
+          "relative": false
+        },
+        "components": [
+          {
+            "alias": "NG_BG",
+            "config": {
+              "lineWidth": 1400,
+              "lineHeight": 50,
+              "lineCount": 30,
+              "bgColor": "#032244",
+              "lineColor": "#021f3f"
+            }
+          }
+        ],
+        "children": []
+      },
+      {
+        "gid": "",
+        "name": "GamePanel",
+        "alias": "gameobject",
+        "tags": "",
+        "active": true,
+        "visible": true,
+        "touchable": false,
+        "width": 0,
+        "height": 0,
+        "transform": {
+          "x": -320,
+          "y": 0,
+          "regX": 320,
+          "regY": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "skewX": 0,
+          "skewY": 0,
+          "rotation": 0,
+          "alpha": 1,
+          "relative": true
+        },
+        "components": [],
+        "children": [
+          {
+            "gid": "",
+            "name": "LogoShadow",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 24,
+              "y": 90,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Texture",
+                "config": {
+                  "frame": "topname_shadow.png",
+                  "textureSrc": "sprite.tt.json",
+                  "baseline": "middle",
+                  "align": "start"
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "Logo",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 20,
+              "y": 80,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Texture",
+                "config": {
+                  "frame": "topname.png",
+                  "textureSrc": "sprite.tt.json",
+                  "baseline": "middle",
+                  "align": "start"
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "MusicBtn",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": true,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 500,
+              "y": 90,
+              "regX": 28,
+              "regY": 32,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Texture",
+                "config": {
+                  "frame": "音乐.png",
+                  "textureSrc": "sprite.tt.json",
+                  "baseline": "",
+                  "align": ""
+                }
+              },
+              {
+                "alias": "Framework_hit_Rect",
+                "config": {
+                  "hitRegion": {
+                    "x": -10,
+                    "y": -10,
+                    "width": 74,
+                    "height": 80
+                  },
+                  "reverse": false
+                }
+              },
+              {
+                "alias": "Framework_Controller",
+                "config": {
+                  "scriptSrc": "scripts/MusicBtnClickEffect.js"
+                }
+              }
+            ],
+            "children": [
+              {
+                "gid": "",
+                "name": "Ban",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 28,
+                  "y": 28,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Texture",
+                    "config": {
+                      "frame": "禁止.png",
+                      "textureSrc": "sprite.tt.json",
+                      "baseline": "",
+                      "align": ""
+                    }
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "gid": "",
+            "name": "PauseBtn",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": true,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 580,
+              "y": 90,
+              "regX": 28,
+              "regY": 32,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_TextureButton",
+                "config": {
+                  "unpressFrame": "暂停.png",
+                  "pressedFrame": "暂停.png",
+                  "clickScale": true,
+                  "textureSrc": "sprite.tt.json",
+                  "hitRegion": {
+                    "x": -10,
+                    "y": -8,
+                    "width": 74,
+                    "height": 80
+                  },
+                  "reverse": false
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "GameArea",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 0,
+              "y": 0,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [],
+            "children": [
+              {
+                "gid": "",
+                "name": "BG",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 10,
+                  "y": 200,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Texture",
+                    "config": {
+                      "frame": "bg.png",
+                      "textureSrc": "sprite.tt.json",
+                      "baseline": "",
+                      "align": ""
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "LabelScore",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 20,
+                  "y": 160,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Texture",
+                    "config": {
+                      "frame": "score.png",
+                      "textureSrc": "sprite.tt.json",
+                      "baseline": "",
+                      "align": ""
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "Score",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 160,
+                  "y": 173,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "0",
+                      "color": "#ACACAC",
+                      "font": "bold 28px Helvetica",
+                      "shadowColor": "",
+                      "shadowOffsetX": 0,
+                      "shadowOffsetY": 2,
+                      "cacheAsImage": false,
+                      "baseline": "middle",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "LabelLevel",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 312,
+                  "y": 160,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Texture",
+                    "config": {
+                      "frame": "lv.png",
+                      "textureSrc": "sprite.tt.json",
+                      "baseline": "",
+                      "align": ""
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "CurRandomNums",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 374,
+                  "y": 154,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [],
+                "children": [
+                  {
+                    "gid": "",
+                    "name": "Number0",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 0.4,
+                      "scaleY": 0.4,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "NG_Number",
+                        "config": {
+                          "number": "0",
+                          "numberX": 30,
+                          "numberY": 30,
+                          "wordWidth": 26,
+                          "colorCircle": "",
+                          "textureSrc": "sprite.tt.json"
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "gid": "",
+                    "name": "Number1",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 40,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 0.4,
+                      "scaleY": 0.4,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "NG_Number",
+                        "config": {
+                          "number": "1",
+                          "numberX": 30,
+                          "numberY": 30,
+                          "wordWidth": 26,
+                          "colorCircle": "",
+                          "textureSrc": "sprite.tt.json"
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "gid": "",
+                    "name": "Number2",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 80,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 0.4,
+                      "scaleY": 0.4,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "NG_Number",
+                        "config": {
+                          "number": "2",
+                          "numberX": 30,
+                          "numberY": 30,
+                          "wordWidth": 26,
+                          "colorCircle": "",
+                          "textureSrc": "sprite.tt.json"
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "gid": "",
+                    "name": "Number3",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 120,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 0.4,
+                      "scaleY": 0.4,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "NG_Number",
+                        "config": {
+                          "number": "3",
+                          "numberX": 30,
+                          "numberY": 30,
+                          "wordWidth": 26,
+                          "colorCircle": "",
+                          "textureSrc": "sprite.tt.json"
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "gid": "",
+                    "name": "Number4",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 160,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 0.4,
+                      "scaleY": 0.4,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "NG_Number",
+                        "config": {
+                          "number": "4",
+                          "numberX": 30,
+                          "numberY": 30,
+                          "wordWidth": 26,
+                          "colorCircle": "",
+                          "textureSrc": "sprite.tt.json"
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "gid": "",
+                    "name": "Number5",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 200,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 0.4,
+                      "scaleY": 0.4,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "NG_Number",
+                        "config": {
+                          "number": "5",
+                          "numberX": 30,
+                          "numberY": 30,
+                          "wordWidth": 26,
+                          "colorCircle": "",
+                          "textureSrc": "sprite.tt.json"
+                        }
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "gid": "",
+                "name": "NumberCt",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": true,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 10,
+                  "y": 200,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_hit_Rect",
+                    "config": {
+                      "hitRegion": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 623,
+                        "height": 623
+                      },
+                      "reverse": false
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "NextNumberCt",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 10,
+                  "y": 200,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [],
+                "children": [
+                  {
+                    "gid": "",
+                    "name": "Combo",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": false,
+                    "visible": true,
+                    "touchable": false,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "regX": 0,
+                      "regY": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "Framework_Texture",
+                        "config": {
+                          "frame": "combo.png",
+                          "textureSrc": "sprite.tt.json",
+                          "baseline": "middle",
+                          "align": "center"
+                        }
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "gid": "",
+                "name": "PauseMask",
+                "alias": "gameobject",
+                "tags": "",
+                "active": false,
+                "visible": true,
+                "touchable": true,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 0,
+                  "y": 0,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_hit_AlwayHit",
+                    "config": {}
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "OverBtns",
+                "alias": "gameobject",
+                "tags": "",
+                "active": false,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 320,
+                  "y": 900,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 1.2,
+                  "scaleY": 1.2,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [],
+                "children": [
+                  {
+                    "gid": "",
+                    "name": "ShareBtn",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": true,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": -158,
+                      "y": 0,
+                      "regX": 100,
+                      "regY": 32,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "Framework_TextureButton",
+                        "config": {
+                          "unpressFrame": "share.png",
+                          "pressedFrame": "share.png",
+                          "clickScale": true,
+                          "textureSrc": "sprite.tt.json",
+                          "hitRegion": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 200,
+                            "height": 64
+                          },
+                          "reverse": false
+                        }
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "gid": "",
+                    "name": "RetryBtn",
+                    "alias": "gameobject",
+                    "tags": "",
+                    "active": true,
+                    "visible": true,
+                    "touchable": true,
+                    "width": 0,
+                    "height": 0,
+                    "transform": {
+                      "x": 158,
+                      "y": 0,
+                      "regX": 100,
+                      "regY": 32,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "skewX": 0,
+                      "skewY": 0,
+                      "rotation": 0,
+                      "alpha": 1,
+                      "relative": true
+                    },
+                    "components": [
+                      {
+                        "alias": "Framework_TextureButton",
+                        "config": {
+                          "unpressFrame": "retry.png",
+                          "pressedFrame": "retry.png",
+                          "clickScale": true,
+                          "textureSrc": "sprite.tt.json",
+                          "hitRegion": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 200,
+                            "height": 64
+                          },
+                          "reverse": false
+                        }
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gid": "",
+        "name": "StartScreen",
+        "alias": "gameobject",
+        "tags": "",
+        "active": true,
+        "visible": true,
+        "touchable": false,
+        "width": 0,
+        "height": 0,
+        "transform": {
+          "x": 0,
+          "y": 0,
+          "regX": 0,
+          "regY": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "skewX": 0,
+          "skewY": 0,
+          "rotation": 0,
+          "alpha": 1,
+          "relative": true
+        },
+        "components": [],
+        "children": [
+          {
+            "gid": "",
+            "name": "GameName",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 120,
+              "y": 300,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 0.8,
+              "scaleY": 0.8,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Controller",
+                "config": {
+                  "scriptSrc": "scripts/JumpNumber.js"
+                }
+              }
+            ],
+            "children": [
+              {
+                "gid": "",
+                "name": "N",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 40,
+                  "y": -2,
+                  "regX": 80,
+                  "regY": 108,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "N",
+                      "color": "#e9e9e9",
+                      "font": "bold 100px Arial",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "U",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 115,
+                  "y": -7,
+                  "regX": 75,
+                  "regY": 103,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "U",
+                      "color": "#e9e9e9",
+                      "font": "bold 100px Arial",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "M",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 213,
+                  "y": -3,
+                  "regX": 93,
+                  "regY": 107,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "M",
+                      "color": "#e9e9e9",
+                      "font": "bold 100px Arial",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "B",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 289,
+                  "y": -7,
+                  "regX": 79,
+                  "regY": 103,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "B",
+                      "color": "#e9e9e9",
+                      "font": "bold 100px Arial",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "E",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 366,
+                  "y": -3,
+                  "regX": 80,
+                  "regY": 107,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "E",
+                      "color": "#e9e9e9",
+                      "font": "bold 100px Arial",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "R",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 449,
+                  "y": -6,
+                  "regX": 91,
+                  "regY": 104,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "R",
+                      "color": "#e9e9e9",
+                      "font": "bold 100px Arial",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "9",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 484,
+                  "y": -23,
+                  "regX": 24,
+                  "regY": 87,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "9",
+                      "color": "#e9e9e9",
+                      "font": "bold 70px Century Gothic",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              },
+              {
+                "gid": "",
+                "name": "91",
+                "alias": "gameobject",
+                "tags": "",
+                "active": true,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 528,
+                  "y": -20,
+                  "regX": 24,
+                  "regY": 90,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Text",
+                    "config": {
+                      "text": "9",
+                      "color": "#e9e9e9",
+                      "font": "bold 70px Century Gothic",
+                      "shadowColor": "#000a15",
+                      "shadowOffsetX": 10,
+                      "shadowOffsetY": 10,
+                      "cacheAsImage": false,
+                      "baseline": "top",
+                      "align": "start"
+                    }
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "gid": "",
+            "name": "PlayBtn",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": true,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 320,
+              "y": 490,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Text",
+                "config": {
+                  "text": "PLAY  ►",
+                  "color": "#1ad0ec",
+                  "font": "bold 50px Arial",
+                  "shadowColor": "#000a15",
+                  "shadowOffsetX": 10,
+                  "shadowOffsetY": 10,
+                  "cacheAsImage": false,
+                  "baseline": "middle",
+                  "align": "center"
+                }
+              },
+              {
+                "alias": "Framework_hit_Rect",
+                "config": {
+                  "hitRegion": {
+                    "x": -120,
+                    "y": -40,
+                    "width": 240,
+                    "height": 80
+                  },
+                  "reverse": false
+                }
+              },
+              {
+                "alias": "Framework_Controller",
+                "config": {
+                  "scriptSrc": "scripts/PlayBtnClickEffect.js"
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "MusicBtn",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": true,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 322,
+              "y": 590,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Text",
+                "config": {
+                  "text": "MUSIC   ♪♪ ",
+                  "color": "#1ad0ec",
+                  "font": "bold 40px Arial",
+                  "shadowColor": "#000a15",
+                  "shadowOffsetX": 10,
+                  "shadowOffsetY": 10,
+                  "cacheAsImage": false,
+                  "baseline": "middle",
+                  "align": "center"
+                }
+              },
+              {
+                "alias": "Framework_hit_Rect",
+                "config": {
+                  "hitRegion": {
+                    "x": -120,
+                    "y": -40,
+                    "width": 240,
+                    "height": 80
+                  },
+                  "reverse": false
+                }
+              },
+              {
+                "alias": "Framework_Controller",
+                "config": {
+                  "scriptSrc": "scripts/MusicBtnClickEffect.js"
+                }
+              }
+            ],
+            "children": [
+              {
+                "gid": "",
+                "name": "Ban",
+                "alias": "gameobject",
+                "tags": "",
+                "active": false,
+                "visible": true,
+                "touchable": false,
+                "width": 0,
+                "height": 0,
+                "transform": {
+                  "x": 78,
+                  "y": 0,
+                  "regX": 0,
+                  "regY": 0,
+                  "scaleX": 0.8,
+                  "scaleY": 0.8,
+                  "skewX": 0,
+                  "skewY": 0,
+                  "rotation": 0,
+                  "alpha": 1,
+                  "relative": true
+                },
+                "components": [
+                  {
+                    "alias": "Framework_Texture",
+                    "config": {
+                      "frame": "禁止.png",
+                      "textureSrc": "sprite.tt.json",
+                      "baseline": "",
+                      "align": ""
+                    }
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "gid": "RankList",
+        "name": "RankList",
+        "alias": "gameobject",
+        "tags": "",
+        "active": true,
+        "visible": true,
+        "touchable": true,
+        "width": 640,
+        "height": 1136,
+        "transform": {
+          "x": -640,
+          "y": 2000,
+          "regX": 0,
+          "regY": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "skewX": 0,
+          "skewY": 0,
+          "rotation": 0,
+          "alpha": 1,
+          "relative": true
+        },
+        "components": [
+          {
+            "alias": "NG_RankSwipe",
+            "config": {}
+          },
+          {
+            "alias": "Framework_hit_Rect",
+            "config": {
+              "hitRegion": {
+                "x": 0,
+                "y": 160,
+                "width": 640,
+                "height": 640
+              },
+              "reverse": false
+            }
+          }
+        ],
+        "children": [
+          {
+            "gid": "",
+            "name": "ReturnFromRankBtn",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": true,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 575,
+              "y": 94,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_hit_Rect",
+                "config": {
+                  "hitRegion": {
+                    "x": -50,
+                    "y": -40,
+                    "width": 100,
+                    "height": 80
+                  },
+                  "reverse": false
+                }
+              },
+              {
+                "alias": "Framework_Controller",
+                "config": {
+                  "scriptSrc": "scripts/PlayBtnClickEffect.js"
+                }
+              },
+              {
+                "alias": "Framework_Texture",
+                "config": {
+                  "frame": "up.png",
+                  "textureSrc": "sprite.tt.json",
+                  "baseline": "middle",
+                  "align": "center"
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "LogoShadow",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 320,
+              "y": 90,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Texture",
+                "config": {
+                  "frame": "topname_shadow.png",
+                  "textureSrc": "sprite.tt.json",
+                  "baseline": "middle",
+                  "align": "center"
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "Logo",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 320,
+              "y": 80,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Texture",
+                "config": {
+                  "frame": "topname.png",
+                  "textureSrc": "sprite.tt.json",
+                  "baseline": "middle",
+                  "align": "center"
+                }
+              }
+            ],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "RankContainer",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 20,
+              "y": 200,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [],
+            "children": []
+          },
+          {
+            "gid": "",
+            "name": "SwipeTips",
+            "alias": "gameobject",
+            "tags": "",
+            "active": true,
+            "visible": true,
+            "touchable": false,
+            "width": 0,
+            "height": 0,
+            "transform": {
+              "x": 320,
+              "y": 712,
+              "regX": 0,
+              "regY": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "rotation": 0,
+              "alpha": 1,
+              "relative": true
+            },
+            "components": [
+              {
+                "alias": "Framework_Text",
+                "config": {
+                  "text": "<  swipe to see others  >",
+                  "color": "#f0f0f0",
+                  "font": "normal 18px Helvetica,黑体",
+                  "shadowColor": "#000000",
+                  "shadowOffsetX": 1,
+                  "shadowOffsetY": 2,
+                  "cacheAsImage": false,
+                  "baseline": "",
+                  "align": "center"
+                }
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
